@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 declare var UIkit: any;
 @Component({
   selector: 'app-root',
@@ -6,7 +7,13 @@ declare var UIkit: any;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'CommonLogin';
+  form = new FormGroup({
+    orgId: new FormControl('', Validators.required),
+    fpMonth: new FormControl('', Validators.required),
+    fpYear: new FormControl('', Validators.required),
+    gstin: new FormControl('', Validators.required),
+  });
+  constructor(){}
   ngOnInit() {
   }
   showAlert(): void {
