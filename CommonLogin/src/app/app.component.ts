@@ -8,10 +8,8 @@ declare var UIkit: any;
 })
 export class AppComponent implements OnInit {
   form = new FormGroup({
-    orgId: new FormControl('', Validators.required),
-    fpMonth: new FormControl('', Validators.required),
-    fpYear: new FormControl('', Validators.required),
-    gstin: new FormControl('', Validators.required),
+    userId: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
   });
   constructor(){}
   ngOnInit() {

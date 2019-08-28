@@ -21,6 +21,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
@@ -46,7 +47,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatButtonToggleModule,
     MatAutocompleteModule,
     MatTableModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   exports: [
     MatCardModule,
@@ -69,7 +72,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatTableModule,
     MatCheckboxModule,
     MatChipsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ReactiveFormsModule,
+    FormsModule,
   ]
 })
 export class SharedModule { }
